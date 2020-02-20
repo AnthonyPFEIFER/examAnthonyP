@@ -42,13 +42,23 @@
     },
     {
       "id": 6,
-      "modele": "Portal",
+      "modele": "Portaaal",
       "marque": "Apple",
       "type": "Portable",
       "category": "Gaming",
       "prixAchat": 500,
       "prixVente": 2000,
       "dateEntree": "2020-02-20T10:53:56.441Z"
+    },
+    {
+      "id": 7,
+      "modele": "Espoir",
+      "marque": "Dell",
+      "type": "Portable",
+      "category": "Bureautique",
+      "prixAchat": 300,
+      "prixVente": 700,
+      "dateEntree": "2020-02-20T15:14:23.335Z"
     }
   ]
 }

@@ -18,10 +18,10 @@ describe('Testing Subject: Computers', () => {
         expect(browser.driver.getCurrentUrl()).toContain('/add');
     });
     it('Testing to fill form. Then testing if I\'m back on dashboard (accueil) ', () => {
-        browser.get('/computer/add');
+        browser.get('/add');
         page.completeForm();
         element.all(by.id('submitBtn')).click();
-        expect(browser.driver.getCurrentUrl()).toContain('home'); // Visiblement, j'ai dû rater le routing. Mais j'arrive pas à y régler
+        expect(browser.driver.getCurrentUrl()).toContain('/home'); // Visiblement, j'ai dû rater le routing. Mais j'arrive pas à y régler
         page.sleep();
     });
     it('Testing if we have one more line ', () => {

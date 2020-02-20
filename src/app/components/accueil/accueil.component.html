@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let computer of computers" [routerLink]="['/computer', computer.id]">
+            <tr *ngFor="let computer of computers" [routerLink]="['/computers', computer.id]">
                 <th scope="row" class="computerLine"> {{computer.id}} </th>
                 <td>{{computer.modele}}</td>
                 <td>{{computer.marque}}</td>
@@ -36,7 +36,7 @@
                 <td>{{ computer.dateEntree |date: "d/MM/y"}}</td>
                 <td>
                     <div class="btn-div">
-                        <a [routerLink]="['/computer/edit/', computer.id]">
+                        <a [routerLink]="['/edit/', computer.id]">
                             <button class="btn btn-edit">
                                 <fa-icon [icon]="faEdit"></fa-icon>
                             </button>

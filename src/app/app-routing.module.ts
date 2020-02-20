@@ -9,9 +9,10 @@ import { EditComputerComponent } from './components/edit-computer/edit-computer.
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: AccueilComponent },
-  { path: 'computer/add', component: AddComputerComponent },
-  { path: 'computers/:id', component: DetailsComputerComponent },
-  { path: 'computers/edit/:id', component: EditComputerComponent }
+  { path: 'add', component: AddComputerComponent },
+  { path: 'edit/:id', component: EditComputerComponent },
+  { path: 'computers/:id', component: DetailsComputerComponent }
+
 ];
 
 @NgModule({

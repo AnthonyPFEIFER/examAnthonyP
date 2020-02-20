@@ -13,7 +13,7 @@
                 {{ computer.prixVente }} €.
                 Le bénéfice théorique est: {{computer.prixVente-computer.prixAchat}} €
             </p>
-            <a [routerLink]="['/computer/edit/', computer.id]" class="card-link">
+            <a [routerLink]="['/edit/', computer.id]" class="card-link">
                 <button class="btn btn-success"> Editer</button>
             </a>
             <a class="deleteComputer" (click)="deleteComputer(computer.id)">
