@@ -1,0 +1,31 @@
+<div *ngIf="isLoading">
+    En cours de chargement...Veuillez patienter...
+</div>
+
+
+<div *ngIf="!isLoading">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ computer.modele }} </h5>
+            <h6 class="card-subtitle mb-2 text-muted"> N° {{ computer.id }}</h6>
+            <p class="card-text">C'est un {{ computer.type }} de catégorie {{ computer.category }} .</p>
+            <p class="card-text">Il a coûté {{ computer.prixAchat }}€ , et son prix de vente sera
+                {{ computer.prixVente }} €.
+                Le bénéfice théorique est: {{computer.prixVente-computer.prixAchat}} €
+            </p>
+            <a [routerLink]="['/computer/edit/', computer.id]" class="card-link">
+                <button class="btn btn-success"> Editer</button>
+            </a>
+            <a class="deleteComputer" (click)="deleteComputer(computer.id)">
+                <button class="btn btn-danger"> Supprimer
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+
+<a routerLink="/home"><button class="btn-success">Revenir à la liste des ordinateurs</button></a>

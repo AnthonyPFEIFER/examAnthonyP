@@ -1,0 +1,64 @@
+{
+  "computers": [
+    {
+      "id": 1,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "Portable",
+      "category": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntree": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 2,
+      "modele": "HumanBooster",
+      "marque": "HP",
+      "type": "Portable",
+      "category": "Premier prix",
+      "prixAchat": 10,
+      "prixVente": 30,
+      "dateEntree": "2020-11-13"
+    },
+    {
+      "id": 3,
+      "modele": "PC3000",
+      "marque": "HP",
+      "type": "Fixe",
+      "category": "Gaming",
+      "prixAchat": 999,
+      "prixVente": 1999,
+      "dateEntree": "1992-10-14"
+    },
+    {
+      "id": 4,
+      "modele": "Testing",
+      "marque": "Dell",
+      "type": "Fixe",
+      "category": "Bureautique",
+      "prixAchat": 42,
+      "prixVente": 51,
+      "dateEntree": "2020-02-20T10:24:40.104Z"
+    },
+    {
+      "id": 5,
+      "modele": "Testing Subject",
+      "marque": "Apple",
+      "type": "Fixe",
+      "category": "Bureautique",
+      "prixAchat": 4200,
+      "prixVente": 6900,
+      "dateEntree": "2020-02-20T10:25:05.150Z"
+    },
+    {
+      "id": 6,
+      "modele": "Portal",
+      "marque": "Apple",
+      "type": "Portable",
+      "category": "Gaming",
+      "prixAchat": 500,
+      "prixVente": 2000,
+      "dateEntree": "2020-02-20T10:53:56.441Z"
+    }
+  ]
+}
