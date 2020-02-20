@@ -2,7 +2,7 @@
 <h2> Nous espérons que votre journée se passe merveilleusement bien ! :)</h2>
 <h2>Vous avez actuellement {{ computers.length }} ordinateurs en stock</h2>
 
-<table class="table table-sm table-dark">
+<table class="table table-sm table-light">
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -31,7 +31,7 @@
             <td>
                 <div class="btn-div">
                     <a [routerLink]="['/computer/edit/', computer.id]">
-                        <button class="btn btn-success"> Editer</button>
+                        <button class="btn btn-edit"> Editer</button>
                     </a>
                     <a class="deleteComputer" (click)="deleteComputer(computer.id)">
                         <button class="btn btn-danger"> Supprimer
