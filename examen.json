@@ -59,6 +59,16 @@
       "prixAchat": 300,
       "prixVente": 700,
       "dateEntree": "2020-02-20T15:14:23.335Z"
+    },
+    {
+      "id": 9,
+      "modele": "GrandSuccess",
+      "marque": "HP",
+      "type": "Portable",
+      "category": "Bureautique",
+      "prixAchat": 420,
+      "prixVente": 900,
+      "dateEntree": "2020-02-20T15:31:27.545Z"
     }
   ]
 }
