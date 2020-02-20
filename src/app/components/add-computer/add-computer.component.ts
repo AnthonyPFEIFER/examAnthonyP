@@ -3,6 +3,7 @@ import { Computer } from 'src/app/models/computer';
 import { ComputerService } from 'src/app/services/computer.service';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-add-computer',
   templateUrl: './add-computer.component.html',

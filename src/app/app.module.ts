@@ -10,6 +10,8 @@ import { AddComputerComponent } from './components/add-computer/add-computer.com
 import { DetailsComputerComponent } from './components/details-computer/details-computer.component';
 import { EditComputerComponent } from './components/edit-computer/edit-computer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

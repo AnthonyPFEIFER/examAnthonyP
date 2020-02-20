@@ -1,44 +1,55 @@
-<h1> Bienvenue sur votre Application Single-page ! </h1>
-<h2> Nous espérons que votre journée se passe merveilleusement bien ! :)</h2>
-<h2>Vous avez actuellement {{ computers.length }} ordinateurs en stock</h2>
+<ng-container *ngIf="isLoading">
+    Chargement en cours
+</ng-container>
 
-<table class="table table-sm table-light">
-    <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Modele</th>
-            <th scope="col">Marque</th>
-            <th scope="col">Type</th>
-            <th scope="col">Categorie</th>
-            <th scope="col">Prix d'achat</th>
-            <th scope="col">Prix de vente</th>
-            <th scope="col">Bénéfices à la revente</th>
-            <th scope="col"> Date d'entrée de l'ordinateur</th>
-            <th scope="col">Actions à exécuter</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let computer of computers" [routerLink]="['/computer', computer.id]">
-            <th scope="row"> {{computer.id}} </th>
-            <td>{{computer.modele}}</td>
-            <td>{{computer.marque}}</td>
-            <td>{{computer.type}}</td>
-            <td>{{computer.category}}</td>
-            <td>{{computer.prixAchat}}</td>
-            <td>{{computer.prixVente}}</td>
-            <td>{{computer.prixVente-computer.prixAchat}}</td>
-            <td>{{ computer.dateEntree |date: "d/MM/y"}}</td>
-            <td>
-                <div class="btn-div">
-                    <a [routerLink]="['/computer/edit/', computer.id]">
-                        <button class="btn btn-edit"> Editer</button>
-                    </a>
-                    <a class="deleteComputer" (click)="deleteComputer(computer.id)">
-                        <button class="btn btn-danger"> Supprimer
-                        </button>
-                    </a>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<ng-container *ngIf="!isLoading">
+
+
+    <h1> Bienvenue sur votre Application Single-page ! </h1>
+    <h2> Nous espérons que votre journée se passe merveilleusement bien ! :)</h2>
+    <h2>Vous avez actuellement {{ computers.length }} ordinateurs en stock</h2>
+    <table class="table table-sm table-light">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Modele</th>
+                <th scope="col">Marque</th>
+                <th scope="col">Type</th>
+                <th scope="col">Categorie</th>
+                <th scope="col">Prix d'achat</th>
+                <th scope="col">Prix de vente</th>
+                <th scope="col">Bénéfices à la revente</th>
+                <th scope="col"> Date d'entrée de l'ordinateur</th>
+                <th scope="col">Actions à exécuter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let computer of computers" [routerLink]="['/computer', computer.id]">
+                <th scope="row" class="computerLine"> {{computer.id}} </th>
+                <td>{{computer.modele}}</td>
+                <td>{{computer.marque}}</td>
+                <td>{{computer.type}}</td>
+                <td>{{computer.category}}</td>
+                <td>{{computer.prixAchat}}</td>
+                <td>{{computer.prixVente}}</td>
+                <td>{{computer.prixVente-computer.prixAchat}}</td>
+                <td>{{ computer.dateEntree |date: "d/MM/y"}}</td>
+                <td>
+                    <div class="btn-div">
+                        <a [routerLink]="['/computer/edit/', computer.id]">
+                            <button class="btn btn-edit">
+                                <fa-icon [icon]="faEdit"></fa-icon>
+                            </button>
+                        </a>
+                        <a class="deleteComputer" (click)="deleteComputer(computer.id)">
+                            <button class="btn btn-danger">
+                                <fa-icon [icon]="faTrash"></fa-icon>
+                            </button>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</ng-container>

@@ -12,23 +12,13 @@
     },
     {
       "id": 2,
-      "modele": "HumanBooster",
+      "modele": "Human Booster",
       "marque": "HP",
       "type": "Portable",
       "category": "Premier prix",
       "prixAchat": 10,
       "prixVente": 30,
       "dateEntree": "2020-11-13"
-    },
-    {
-      "id": 3,
-      "modele": "PC3000",
-      "marque": "HP",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 999,
-      "prixVente": 1999,
-      "dateEntree": "1992-10-14"
     },
     {
       "id": 4,
